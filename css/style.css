@@ -85,6 +85,10 @@ img {
   line-height: normal;
   text-transform: capitalize;
 }
+.follow-area-one {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
 .follow-area-two {
   display: flex;
   border-radius: 8px;
@@ -261,8 +265,8 @@ img {
   line-height: 30px; /* 166.667% */
 }
 .videos {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 24px;
 }
 .single-video {
@@ -323,6 +327,8 @@ img {
   padding-bottom: 120px;
 }
 .play {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -360,7 +366,7 @@ img {
   margin-top: 24px;
 }
 .play-img {
-  max-width: 45%;
+  max-width: 80%;
   position: relative;
 }
 .play-img-over {
@@ -381,7 +387,6 @@ img {
 .game-content-one {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 .single-game {
   display: flex;
