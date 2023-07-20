@@ -121,6 +121,9 @@ img {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+.banner-content {
+  padding: 148px 0px;
+}
 .banner-content h4 {
   color: #0b0223;
   font-family: Work Sans;
@@ -163,7 +166,7 @@ img {
   align-items: center;
 }
 .banner-img img {
-  max-width: 80%;
+  max-width: 100%;
 }
 .banner-btn {
   margin-top: 48px;
@@ -202,7 +205,6 @@ img {
   text-transform: capitalize;
 }
 .about-content p {
-  width: 520px;
   color: #534c64;
   text-align: right;
   font-family: Work Sans;
@@ -385,16 +387,16 @@ img {
   padding: 120px 0px;
 }
 .game-content-one {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
 }
 .single-game {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 .single-game img {
-  max-width: 20%;
+  width: 20%;
 }
 .single-game span {
   color: #0b0223;
@@ -406,7 +408,47 @@ img {
 }
 .game-content-two {
   margin-top: 35px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.footer-area .logo {
+  width: 20%;
+}
+.footer-area {
+  background: #0B0223;
+  padding: 120px 130px;
+  color: #fff;
+  text-align: center;
+}
+.footer .logo {
+  width: 20%;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 500px;
+}
+.footer {
+  margin: 0 auto;
+  width: 100%;
+}
+.footer-content {
+  margin: 0 auto;
+  width: 100%;
+  margin: 40px 0px;
+}
+.icons i {
+  margin-right: 20px;
+  font-size: 35px;
+  color: #fff;
+  margin-bottom: 40px;
+}
+.icons .fa-youtube {
+  margin: 20px;
+
+}
+.footer-content-two span{
+  margin-right: 10px;
+}
+.footer-copy {
+  margin-top: 28px;
 }

@@ -5,7 +5,7 @@
 .logo {
   margin-left: 100px;
   }
-  .header, .nav ul, .banner, .follow-area-two, .about {
+  .header, .nav ul, .banner, .follow-area-two, .about, .follow-area-one, .videos, .play {
     grid-template-columns: 1fr;
     
   }
@@ -19,5 +19,7 @@
   max-width: 400px;
   margin: 0 auto;
 }
-
+.game-content-one {
+  grid-template-columns: repeat(3, 1fr);
+}
 }
