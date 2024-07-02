@@ -48,8 +48,7 @@ img {
   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 }
 .header {
-  display: grid;
-  grid-template-columns: 200px auto;
+  display: flex;
   justify-content: space-between;
 }
 .logo {
@@ -267,8 +266,7 @@ img {
   line-height: 30px; /* 166.667% */
 }
 .videos {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
   gap: 24px;
 }
 .single-video {
@@ -288,6 +286,10 @@ img {
 }
 .video-img {
   position: relative;
+
+}
+.video-img img {
+  max-width: 100%;
 }
 .hover-video {
   position: absolute;
@@ -328,17 +330,27 @@ img {
 .play-area {
   padding-bottom: 120px;
 }
+
 .play {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  gap: 40px;
 }
-.play-content {
+.play-content .content {
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.play-content .content h2 {
+  text-align: center;
+}
+.play-content .content p {
+  max-width: 400px;
+   text-align: center;
 }
 
 .play-content span {
@@ -386,9 +398,12 @@ img {
   );
   padding: 120px 0px;
 }
-.game-content-one {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+.game-content-one, .game-content-two {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 .single-game {
   display: flex;
@@ -408,8 +423,6 @@ img {
 }
 .game-content-two {
   margin-top: 35px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
 }
 .footer-area .logo {
   width: 20%;
